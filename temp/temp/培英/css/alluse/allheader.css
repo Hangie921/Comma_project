@@ -1,0 +1,112 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+ol, ul {
+    list-style: none;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.8);
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.logo{
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 75px;
+	top:-10px;
+	left:40px;
+	/*border:1px solid #eee;*/
+	float: left;
+}
+.menu-container{
+	position: relative;
+	display: block;
+	width: 398px;
+	height: 50px;
+	margin:0 auto;
+}
+.menu{
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin:0 5px;
+}
+.menu:nth-child(3){
+	background:#eee;
+}
+.menu:nth-child(1) .m::before, .menu:nth-child(2) .m::before{
+	position: absolute;
+	content:" ";
+	width: 5px;
+	height: 5px;
+	border-radius:50%;
+	background:#fff;
+	top: 38px;
+	left: -3px;	
+}
+.menu:nth-child(1) .m::after, .menu:nth-child(2) .m::after{
+	position: absolute;
+	content:" ";
+	width: 5px;
+	height: 5px;
+	border-radius:50%;
+	background:#fff;
+	top: 38px;
+	left: 118px;	
+}
+.m{
+	display: inline-block;
+	width: 110px;
+	height: 40px;
+	border-bottom: 1px solid #fff;	
+}
+.m a{
+	text-decoration: none;
+	color:#eee;
+}
+#ordera{
+	color:#222;
+}
+#order{
+	border-bottom: 1px solid #444;
+}
+
+.login{
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	right:40px;
+	top: 10px;
+	/*border:1px solid #eee;*/
+}
+.signup{
+	font-family: Times New Roman;
+	font-size: 10px;
+	margin-top: -5px;
+}
+.signup a{
+	text-decoration: none;
+	color:#fff;
+}

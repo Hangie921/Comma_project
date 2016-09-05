@@ -1,0 +1,242 @@
+.result{
+	display:none;
+	position:fixed;
+	top: 10%;
+	left: 10%;
+	width: 650px;
+	height: 250px;
+	background: #fff;
+}
+
+.result div:nth-child(1){
+	margin-top: -45px;
+}
+
+.result div:nth-child(2){
+	position: relative;
+	width: 350px;
+	height: 130px;
+	margin: 0 auto;
+	margin-top: 70px;
+	border:1px solid #000;
+	text-align: center;
+	font-size: 40px;
+	line-height: 3;
+}
+.result .success{
+	color:#ffc600;
+}	
+
+.x{
+	position: relative;
+	margin-left: 620px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	outline: 1px solid #fcc;
+}
+
+.x:hover{
+	background-color:#ffa800; 	
+}
+
+
+#lightboxExtUpload{
+	display: none;
+	position: relative;
+	width: 650px;
+	text-align: center;
+	margin-top: 8%;
+	
+}
+
+.exbTextLB{
+	color: #ffc600;
+}
+
+.imgLB img{
+	width: 200px;
+}
+
+.boxLB{
+	width: 650px;
+	height: 100%;
+	border: 2px solid #fff;
+}
+
+.exbConLB>div{
+	display: inline-block;
+	/*outline: 1px solid #ffc;*/
+}
+
+.exbTextLB.aa{
+	width: 260px;
+	font-size: 16px;
+	letter-spacing:2px;
+	line-height:22px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+
+}
+
+.exbTexta{
+	font-size: 16px;
+	margin:8px 0;
+	margin-right:5px ;
+	color: #ddd;	
+}
+
+.bb .exbTexta{
+	
+	margin-right: 75px;
+	font-size: 16px;
+}
+
+.buttons{
+	margin-right: 112px;
+	padding-bottom: 20px;
+}
+
+#lightCurOrder{
+	display: none;
+	position: relative;
+	width: 650px;
+	text-align: center;
+	margin-top: 8%;
+}
+
+#lightboxHisOrder{
+	display: none;
+	position: relative;
+	width: 650px;
+	text-align: center;
+	margin-top: 8%;
+}
+
+#closeHisButton,#closeCurButton{
+	width: 125px;
+	padding: 7px 0px;
+	background-color: #000;
+	color:#fff;
+	border: 0px;
+	font-size: 16px;
+	margin-left: 500px;
+	cursor: pointer;
+}
+
+.exbText.dd{
+	/*outline: 1px solid #fcc;*/
+	text-align:left;
+	margin-right:460px;
+}
+
+#lightboxCancel{
+	display: none;
+	position: relative;
+	width: 650px;
+	text-align: center;
+	margin-top: 8%;
+}
+
+.exbText.ee{
+	width: 564px;
+	padding: 10px 8px;
+	background-color: #fff;
+	color: #000;
+	line-height: 20px;
+	text-align: left;
+}
+
+#cancelConMobile{
+	display: none;
+}
+
+#CancelButton{
+	width: 125px;
+	padding: 7px 0px;
+	background-color: #000;
+	color:#fff;
+	border: 0px;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+#closeCancelButton{
+	width: 125px;
+	padding: 7px 0px;
+	background-color: #fff;
+	color:#000;
+	border: 0px;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.agg{
+	font-size: 16px;
+	color: #ddd;
+	/*outline: 1px solid #fcc;*/
+}
+
+.agg input{
+	width:20px;
+}
+
+#lightboxAssess{
+	display: none;
+	position: relative;
+	width: 650px;
+	text-align: center;
+	margin-top: 8%;
+}
+
+
+#asOrdchoice,#asOrdText{
+	width: 300px;
+	color: #ffc600;
+	text-align: left;
+	margin-left: 200px;
+	margin-top:8px;
+}
+
+#asOrdText{
+	line-height: 20px;
+}
+.exbText{
+	font-size: 16px;
+
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right:5px ;
+	color: #ddd; 
+	/*outline: 1px solid #fcc;*/
+}
+
+.AsLB{
+	font-size: 16px;
+	text-align: left;
+	margin-left: 200px;
+	color: #ddd; 
+	margin-top:30px;
+}
+
+.cancelMobile{
+	display: none;
+}
+
+.light_bg{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.9);
+	z-index: 2;
+}

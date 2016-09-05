@@ -1,0 +1,87 @@
+/*leftnav*/
+.leftnav .block{
+	display: none;
+}
+.leftnav{
+	display: block;
+	width: 100%;
+	left: 0;
+}
+.leftnav .year, .leftnav .month{
+	display: block;
+	width: 100%;
+	left: 0;
+	position: relative;
+	margin: 0 auto;
+}
+.leftnav .month{
+	top: 110px;
+}
+.leftnav .month::before{
+	content: "";
+	position: absolute;
+	top: 50px;
+	left:  30px;
+	border-left:20px solid transparent;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	border-right:20px solid #666;
+}
+.leftnav .month::after{
+	content: "";
+	position: absolute;
+	top: 50px;
+	right:  30px;
+	border-left:20px solid #666;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	border-right:20px solid transparent;
+}
+.leftnav .before, .leftnav .after{
+	display: none;
+}
+
+/*calendar-container*/
+#calendar-container{
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 85px;
+}
+#calendar-dates{
+	margin-bottom: 80px;
+}
+#calendar-dates table{
+	width: 100%;
+	height: 100%;
+	border-spacing: 10px;
+}
+#calendar-dates table td{
+	width: 60px;
+	height: 60px;
+	border:none;	
+	font-size: 35px;
+}
+
+/*EPcontainer*/
+.EPcontainer{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.empty-place{
+	background:#272727;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+/*gotop*/
+.gotop{
+	display: inline-block;
+	position: fixed;
+	width: 51px;
+	height: 51px;
+	right: 20px;
+	bottom: 10px;
+}

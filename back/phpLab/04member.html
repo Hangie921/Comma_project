@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body>
+<form method="get" action="04memberShow.php">
+<table align="center" border="1">
+<h2 align="center">申請會員</h2>
+<tr><td>姓名：</td><td><input type="text" name="memName" maxlength="8"></td></tr>
+<tr><td>帳號：</td><td><input type="text" name="memId" maxlength="8"><sub>最多8個文數字</sub></td></tr>
+<tr><td>密碼：</td><td><input type="password" name="memPsw" maxlength="8"><sub>最多8個文數字</sub></td></tr>
+<tr><td>e-mail：</td><td><input type="text" name="email"></td></tr>
+<tr><td>性別：</td><td><label><input type="radio" name="sex" checked value="male">男</label>
+    <label><input type="radio" name="sex" value="female">女</label></td></tr>
+<tr><td>生日：</td><td><input type="text" name="birthday" maxlength="12"></td></tr>
+<tr><td>連絡電話：</td><td><input type="text" name="tel" maxlength="12"></td></tr></table>
+<p align="center"><input type="submit" value="新增">
+<input type="reset" value="重新設定"></p>
+</form>
+</body>
+</html>

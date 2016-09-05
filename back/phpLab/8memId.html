@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h2>申請加入會員</h2>
+
+<form id="myForm" action="http://www.kimo.com.tw">
+  帳號<input type="text" name="memId" id="memId"/><br />
+  密碼<input type="password" name="memPsw" id="memPsw"/><br />
+  <input type="button" value="確定加入" id="btnSend" onclick="checkForm()" />
+</form>
+
+<script>
+function checkForm(){
+  //檢查帳號必需英文、數字兼具
+  num = 0;
+  eng = 0;
+  numAppear = false;
+  engAppear = false;
+  id = document.getElementById('memId').value;
+  psw = document.getElementById('memPsw').value;
+
+  for(i=0;i<id.length;i++){
+  	if(id.charAt(i) >= 0 && id.charAt(i) <= 9 ){   // num出現過就++
+  		num++;
+  	}
+  	else if(id.charAt(i).toUpperCase().charCodeAt()>= 65 && id.charAt(i).toUpperCase().charCodeAt() <= 90){   // eng出現過就++
+  		eng++;
+  	}
+  }//end of for
+
+  if (eng>0 && num>0){  //兩個都為true才是合規則的id
+  	document.getElementById('myForm').submit();
+  	return;
+  }
+  else{
+  	alert('需要同時有英文跟數字喔!!');
+  	document.getElementById('memId').focus();
+  }
+
+  //正確送出，錯誤則顯示錯誤訊息
+}
+</script>
+
+
+</body>
+</html>

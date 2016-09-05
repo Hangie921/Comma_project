@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>檢查會員帳號</title>
+<style>
+body { font-family:"微軟正黑體", "新細明體", "Arial Unicode MS";
+	margin-top:0px; 
+	margin-left::0px;
+	font-size:12pt;
+	color:black;}
+
+#memTable {
+	border-collapse:collapse;
+	background-color:#DCDCDC;
+	border: 2px solid #666;
+	line-height:24pt;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#memTable caption {font-size:16pt;}
+#memTable th {
+	background-color:#F96;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+	text-align:right;
+	padding:6px;
+}
+#memTable td{
+	border-bottom: 1px solid #666;
+	padding:6px;
+}
+
+input {color:blue;  font-family:"微軟正黑體", "新細明體", "Arial Unicode MS";}
+
+.must{
+	font
+	text-transform: uppercase;
+	color: #F00;
+}
+
+</style>
+
+<script> 
+
+function checkId(){  
+	xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = stateChanged; // call the stateChanged() when status changed
+
+	var url = 'GetResponseText.php';
+	xhr.open('Post',url,true);//start the connecttion
+	var data = "memId="+document.getElementById('memId').value;
+	xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');//post 的時候要將資料編譯過後才會送出，所以需要這行來設定編譯方式
+	xhr.send(data);//send the request
+}	
+
+function stateChanged(){
+	if(xhr.readyState == 4){
+		if(xhr.status == 200){
+			if(xhr.responseText == "true"){
+				document.getElementById('memIdCheckInformation').innerHTML='此帳號可使用';
+			}else{
+				document.getElementById('memIdCheckInformation').innerHTML='此帳號已有人使用';
+			}//end of the responseText
+		}else {
+			alert(xhr.status);
+		}//end of the status if
+
+	}//end of readyState if 
+}
+
+</script>
+</head>
+<body> 
+<h2 align="center">申請加入會員</h2>
+<form>
+<table width="540" border="0" cellpadding="0" cellspacing="0" id="memTable">
+    <caption>會員申請單</caption>
+    <tr>
+        <th>帳號<span class="must">*</span>:</th><td>
+        <input name="memId" id="memId" type="text" size="8" maxlength="8" />
+        <input type="button" value="檢查帳號是否可用" onClick="checkId();"><span id="memIdCheckInformation"></span>	 
+        </td></tr>    
+    <tr><th width="35%">姓名<span class="must">*</span>:</th><td><input name="memName" type="text" size="10" maxlength="10" /></td></tr>
+
+    <tr>
+        <th>密碼<span class="must">*</span>:</th><td><input name="memPsw" type="password" size="8" maxlength="8" /></td></tr>
+     <tr>
+         <th>確認密碼<span class="must">*</span>:</th><td><input name="memPsw2" type="password" size="8" maxlength="8" /></td></tr    
+    ><tr><th>Email:</th><td><input name="email" type="text" size="50" maxlength="50" /></td></tr>
+    <tr><th>性別:</th><td><input name="sex" type="radio" value="1"/>男<input name="sex" type="radio" value="0"/>女</td></tr>
+    <tr><th>生日:</th>
+    <td><input name="y" type="text"  size="4" maxlength="4"/>-
+        <input name="m" type="text" size="2" maxlength="2"/>-
+        <input name="d" type="text" size="2" maxlength="2"/>
+        (格式: yyyy-mm-dd)</td></tr>
+    <tr><th>電話:</th><td><input name="tel" type="text" size="10" maxlength="10"/></td></tr>
+</table>
+<p style="text-align:center"><input type="submit" value="確定加入"/>&nbsp;<input type="reset" value="取消" /> </p>
+</form>
+<div id="showPanel">
+</div>
+</body>
+</html>

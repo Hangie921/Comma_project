@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style>
+td {border-radius:20px;border-style:solid;width:40px;height:40px;text-align:center;margin:10px;}
+</style>
+
+</head>
+
+<body>
+<div id="divMsg" style="font-size:20px;height:50px"></div>
+
+
+</body>
+</html>
+<script>
+var previous = null
+window.onload = function (){
+  var table = document.createElement("table");
+  var tbody = document.createElement("tbody");
+  
+  for( var i=1; i<=5; i++){
+	tr = document.createElement("tr");
+	for( var j=1; j<= 7; j++){
+	  td = document.createElement("td");
+	  textNode = document.createTextNode((i-1)*7+j);	
+	  td.appendChild( textNode );
+	  //如果此格位的內容==今天的日期,將此格位的顏色改為藍色
+	  if( parseInt(td.innerHTML) == new Date().getDate()){
+	    td.style.color = "blue";
+	  }
+	  td.onclick=function (){
+		if( previous != null ){
+		  previous.style.backgroundColor = "white";
+		}
+		this.style.backgroundColor = "deepPink";
+		previous = this;
+		document.getElementById( "divMsg" ).innerHTML = this.innerHTML;
+	  }//td.onclick
+	  tr.appendChild( td );
+	}//j
+	tbody.appendChild(tr);
+  }//i
+  table.appendChild(tbody);
+  table.setAttribute("cellspacing",30);
+  document.getElementsByTagName("body")[0].appendChild( table );
+}//window.onload
+
+</script>

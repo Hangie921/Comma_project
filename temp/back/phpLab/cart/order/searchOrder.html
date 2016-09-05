@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<meta charset="UTF-8">
+	<title>訂單系統首頁</title>
+	<style>
+		div{
+			float: left;
+		}
+		#sideContainer{
+			width: 20%;
+			height: 300px;
+			margin-top: 50px;
+			padding: 5px;
+			box-sizing: border-box;
+			/*background-color:#aaa;*/
+
+		}
+		#sideContainer ul{
+			margin-left:15%;
+			margin-right: 15%;
+		}
+		#listContainer{
+			width: 70%;
+			margin-top: 50px;
+			box-sizing: border-box;
+		}
+		#orderList,#orderList tr,#orderList td{
+			border:1px solid #000;
+			padding: 5px;
+		}
+		#sublist{
+			padding-left: 10px;
+		}
+		h2{
+			font-size: 30px;
+			text-align:center;
+		}
+	</style>
+</head>
+
+<body>
+<div id="sideContainer">
+	<ul>
+		<li><a href="searchOrder.html">搜尋訂單</a></li>
+		<li>修改訂單</li>
+		<li>發通知
+			<ul id="sublist">
+				<li>付款通知</li>
+				<li>評論通知</li>
+				<li>退款通知</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+	<div id="listContainer">
+	<h2>訂單搜尋</h2>	
+	<table id="orderList" border="1" align="center">
+		<tr>
+			<td>訂單編號</td>
+			<td>預約會員編號</td>
+			<td>場地編號</td>
+			<td>處理員工編號</td>
+			<td>總價</td>
+			<td>訂單處理狀況</td>
+			<td>操作</td>
+		</tr>
+		<tr>
+			<td><input type="text" value=""></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select name="" id="">
+					<option value="">未付款</option>
+					<option value="">已付款</option>
+					<option value="">使用中</option>
+					<option value="">未退款</option>
+					<option value="">已退款</option>
+					<option value="">未評論</option>
+					<option value="">已結案</option>
+				</select>
+			</td>
+			<td><input type="button" value="送出"></td>
+		</tr>
+		
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.box{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		right: -170px;
+		top: 100px;
+		transition: 1s;
+		background-color:rgba(0, 0, 0, .3);
+	}
+	.box.active{
+		right: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('.box').click(function(){
+			$(this).toggleClass('active');
+		})
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+.result{
+	/*display:none;*/
+	position:fixed;
+	top: 10%;
+	left: 10%;
+	width: 280px;
+	height: 150px;
+	background: #fff;
+	padding-top: 20px;
+}
+
+.result div:nth-child(1){
+	margin-top: -45px;
+}
+
+.result div:nth-child(2){
+	position: static;
+	width: 180px;
+	height: 60px;
+	margin-top: 25px;
+	padding-bottom: 20px;
+	border:1px solid #000;
+	text-align: center;
+	font-size: 32px;
+	line-height: 2.3;
+
+}
+
+.result .success{
+	color:#ffc600;
+}	
+
+.x{
+	position: relative;
+	margin-left: 85%;
+	margin-bottom: 10px;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	/*outline: 1px solid #fcc;*/
+}
+
+.x:hover{
+	background-color:#ffa800; 	
+}
+
+
+#lightboxExtUpload{
+	display: none;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	margin-top: 8%;
+	
+}
+
+.exbTextLB{
+	color: #ffc600;
+}
+
+.imgLB img{
+	width: 200px;
+}
+
+.boxLB{
+	width: 650px;
+	height: 100%;
+	border: 2px solid #fff;
+}
+
+.exbConLB>div{
+	display: inline-block;
+	/*outline: 1px solid #ffc;*/
+}
+
+.exbTextLB.aa{
+	width: 230px;
+	font-size: 16px;
+	letter-spacing:2px;
+	line-height:22px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+
+}
+
+.exbTexta{
+	font-size: 16px;
+	margin:8px 0;
+	margin-right:5px ;
+	color: #ddd;	
+}
+
+.bb .exbTexta{
+	
+	margin-right: 100px;
+	font-size: 16px;
+}
+
+.buttons.cc{
+	margin-right: 50px;
+}
+
+#lightCurOrder{
+	display: none;
+	/*position: relative;*/
+	width: 100%;
+	/*text-align: center;*/
+	/*margin-top: 8%;*/
+}
+
+#lightboxHisOrder{
+	display: none;
+	/*position: relative;*/
+	width: 100%;
+	/*text-align: center;*/
+	/*margin-top: 8%;*/
+}
+
+#closeHisButton,#closeCurButton{
+	width: 100px;
+	padding: 7px 0px;
+	background-color: #000;
+	color:#fff;
+	border: 0px;
+	font-size: 16px;
+	margin-left: 500px;
+	cursor: pointer;
+
+
+	/*margin-left:70%;*/
+
+}
+
+.exbText.dd{
+	/*outline: 1px solid #fcc;*/
+	text-align:left;
+	margin-left:15px;
+}
+
+
+#lightboxCancel{
+	width: 90%;
+}
+
+.exbText.ee{
+	width: 75%;
+	padding: 5px;
+}
+
+#cancelConAll{
+	display: none;
+}
+
+#cancelConMobile{
+	display: block;
+	width: 76%;
+	margin-left: 10%;
+}
+
+#CancelButton{
+	width: 100px;
+}
+
+#closeCancelButton{
+	width: 100px;
+}
+
+.cancelMobile{
+	display: block;
+	width: 90%;
+	padding-left: 10%;
+}
+
+.cancelAll{
+	display: none;
+}
+.agg{
+	font-size: 16px;
+	color: #ddd;
+	/*outline: 1px solid #fcc;*/
+}
+
+.agg input{
+	width:20px;
+}
+
+#asOrdchoice,#asOrdText{
+	color: #ffc600;
+	text-align: left;
+	margin-left: 50px;
+	margin-top:8px;
+}
+
+
+.exbText{
+	font-size: 16px;
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right:5px ;
+	color: #ddd; 
+	/*outline: 1px solid #fcc;*/
+}
+
+.AsLB{
+	font-size: 16px;
+	text-align: left;
+	margin-left: 50px;
+
+	color: #ddd; 
+	margin-top:30px;
+}
+
+.boxLB{
+	width: 90%;
+	height: auto;
+	border: 2px solid #fff;
+}
+
+.asLiBox,.orBox{
+	width: 90%;
+	height: auto;
+	border: 2px solid #fff;
+}
+
+.orBox{
+	width: 100%;
+}
+
+#lightCurOrder .orBox,#lightboxHisOrder .orBox,#lightboxAssess .mbox.asLiBox{
+	width: 90%;
+
+}
+.orBox .curOrdMobile,.orBox .hisOrdMobile{
+	padding-right: 90px;
+}
+
+.hisOrdMobile,.curOrdMobile{
+	padding-left: 10%;
+}
+
+#lightboxAssess{
+	width: 100%;
+}
+
+.x.x1{
+	position: absolute;
+	top:-5px;
+}
+

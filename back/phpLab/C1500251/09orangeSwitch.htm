@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+
+</head>
+
+<body>
+
+<center>
+<table border="1" width="400">
+<caption>計價</caption>
+<form method="get" action="08orangeIf.php">
+<tr><td>等級</td><td>40公斤以內</td><td>40~100公斤</td><td>超出100公斤</td></tr>
+<tr><td>1</td><td>30元/公斤</td><td>25元/公斤</td><td>20元/公斤</td></tr>
+
+<tr><td>2</td><td>25元/公斤</td><td>20元/公斤</td><td>15元/公斤</td></tr>
+
+<tr><td>3</td><td>20元/公斤</td><td>15元/公斤</td><td>10元/公斤</td></tr>
+
+</table>
+<select name="level">
+ <option>等級</option>
+ <option name="level">1</option>
+ <option name="level">2</option>
+ <option name="level">3</option>
+</select><br />
+  公斤:<input type="text" name="kg" size="8"/><br />
+  單價:<input type="text" name="price" size="8"/><br />
+  <input type="submit" value="計算" /> <input type="reset" value="重新設定" />
+</form>
+</center>
+
+</body>
+</html>

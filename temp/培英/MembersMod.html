@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Members mod</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/alluse/allheader.css">
+    <link rel="stylesheet" href="css/alluse/allfooter.css">
+    <link rel="stylesheet" type="text/css" href="css/alluse/header-phone.css" media="screen and (max-width: 480px)">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700|Anton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300|Questrial' rel='stylesheet'>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/space01.js"></script>
+    <script src="js/bpopup-0.11.0.min.js"></script>
+    <style>
+    .box {
+        height: 700px;
+        width: 900px;
+        background-color: #666;
+        margin: 0 auto;
+        /*	margin-right: 500px;
+	margin-left: 500px;
+	margin-top: 100px;
+	margin-bottom: 100px;*/
+        font-family: "Times New Roman", Times, serif;
+        font-size: 22px;
+        color: #FFF;
+        background-image: url(../t1jpg.jpg);
+        padding: 20px;
+    }
+    
+    .box1 {
+        border: 2px solid #FFF;
+        margin: 30px;
+    }
+    
+    .title {
+        font-size: 28px;
+        text-align: center;
+        color: #FFF;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    .form {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+ 
+    
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="img/logo_white.png" width="90" height="75"></a>
+        </div>
+        <div class="menu-container">
+            <div class="menu"><span class="m" id="exhibition"><a href="#">展覽資訊</a></span></div>
+            <div class="menu"><span class="m" id="place"><a href="#" id="ordera">場地種類</a></span></div>
+            <div class="menu"><span class="m" id="order"><a href="#">預約檔期</a></span></div>
+        </div>
+        <div class="login"><img src="img/singup.jpg" height="50" width="50">
+            <br/><span class="signup"><a href="#">登入 / 註冊</a></span></div>
+        <div class="burger-cover">
+            <ul>
+                <li class="bur top"></li>
+                <li class="bur middle"></li>
+                <li class="bur bottom"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftbox">
+        <div class="box">
+            <div class="box1">
+                <div class="title">
+                    <h2 class="title">會員資料修改</h2>
+                </div>
+                <form name="form1" method="post" action="">
+                    <table width="335" height="600" border="0" class="form">
+                        <tr>
+                            <td class="row">連絡電話 /</td>
+                            <td>
+                                <input name="name" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row">電子信箱 /</td>
+                            <td>
+                                <input name="mail" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row">原始密碼 /</td>
+                            <td>
+                                <input name="oldpassword" type="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row">修改原始密碼 /</td>
+                            <td>
+                                <input name="newpassword" type="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row">再輸入新密碼 /</td>
+                            <td>
+                                <input name="newpassword" type="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row">上傳圖像 /</td>
+                            <td>
+                                <input name="picture" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="new" type="button" value="重新輸入">
+                            </td>
+                            <td>
+                                <input name="submit" type="button" value="送出">
+                            </td>
+                        </tr>
+                </form>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <footer>
+        <p class="contact">Contact Information</p>
+        <div class="con-container">
+            <p><span class="footer_comma"><img src="../footer_comma.jpg" height="10" width="10"></span><span class="con1">電話</span>──────<span class="con2">(03)3478-189</span></p>
+            <p><span class="footer_comma"><img src="../footer_comma.jpg" height="10" width="10"></span><span class="con1">傳真</span>──────<span class="con2">(03)3478-189</span></p>
+            <p><span class="footer_comma"><img src="../footer_comma.jpg" height="10" width="10"></span><span class="con1">信箱</span>──────<span class="con2">couldbedon@gmail.com</span></p>
+            <p><span class="footer_comma"><img src="../footer_comma.jpg" height="10" width="10"></span><span class="con1" id="optime">營業時間</span>──────<span class="con2">每日09 : 00 ~ 17 : 00</span></p>
+        </div>
+        <p class="authority">&copy;comma Popside.comma design.wendy Yang</p>
+    </footer>
+    </div>
+</body>
+
+</html>

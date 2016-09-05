@@ -1,0 +1,67 @@
+#bg_animation{
+	display: none;
+}
+#content .block{
+	-webkit-animation: none;
+	-o-animation: none;
+	animation: none;
+	left: 0;
+}
+#content{
+	margin-top: 30%;
+}
+#content #title{
+	text-align: center;
+	margin-bottom: 5%;
+	padding-top: 0;
+	padding-bottom: 5%;
+}
+#hr{
+	display: none;
+}
+.block{
+	padding: 1px;
+}
+.answer,.question{
+	width: 100%;
+	margin-top: 5%;
+	padding-bottom: 6%;
+}
+.text{
+	padding-bottom:4%;
+}
+.q_pic,.a_pic{
+	padding: 8px;
+	width: 15%;
+}
+.q_pic:before,.a_pic:before{
+
+}
+.q_pic:after,.a_pic:after{
+	width: 50%;
+}
+.a_pic:after{
+	left: -51%;
+}
+.a_pic:before{
+	left: -51%;
+}
+.block:nth-child(2n+1) .text{
+	border:2px solid #fff;
+}
+.block:nth-child(2n+1) .q_pic,.block:nth-child(2n+1) .a_pic{
+	border:2px solid #fff;
+}
+.block:nth-child(2n+1) .q_pic:before,.block:nth-child(2n+1) .a_pic:before{
+	background-color: #fff;
+}
+.block:nth-child(2n+1) .q_pic:after,.block:nth-child(2n+1) .a_pic:after{
+	background-color: #fff;
+}
+#a1 .text p,
+#a4 .text p{
+	text-align: center;
+}
+#a4{
+	padding-bottom: 6%;
+}

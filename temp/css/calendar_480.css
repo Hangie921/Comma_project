@@ -1,0 +1,91 @@
+/*leftnav*/
+body{
+	background: #eee;
+}
+.leftnav .block, #canvas{
+	display: none;
+}
+.leftnav{
+	position: relative;
+	display: block;
+	width: 100%;
+	left: 0;
+	padding-bottom: 50px;
+}
+.leftnav .year, .leftnav .month{
+	display: block;
+	width: 100%;
+	left: 0;
+	position: relative;
+	margin: 0 auto;
+}
+.leftnav .month{
+	top: 110px;
+}
+.leftnav .before{
+	position: absolute;
+	top: 210px;
+	left:  30px;
+}
+.leftnav .after{
+	position: absolute;
+	top: 210px;
+	right:  30px;
+}
+
+/*calendar-container*/
+#calendar-container{
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 85px;
+}
+#calendar-dates{
+	margin-bottom: 80px;
+}
+#calendar-dates table{
+	width: 100%;
+	height: 100%;
+	border-spacing: 6px;
+	margin:0 auto;
+	margin-top: 50px;
+
+}
+#calendar-dates table #weekname{
+	font-size: 20px;
+}
+#calendar-dates table td div{
+	width: 39px;
+	height: 39px;
+	border:none;
+	line-height: 39px;	
+	font-size: 20px;
+}
+
+/*EPcontainer*/
+.EPcontainer{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.empty-place{
+	background:#272727;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 5px;
+}
+
+/*gotop*/
+.gotop{
+	display: inline-block;
+	position: fixed;
+	z-index: 2;
+	width: 51px;
+	height: 51px;
+	right: 20px;
+	bottom: 10px;
+}
+.gotop a{
+	text-decoration: none;
+}

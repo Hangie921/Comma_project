@@ -1,0 +1,74 @@
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	clear:both;
+	background: rgba(0, 0, 0, 1);
+	color:#fff;
+	padding-bottom: 15px;
+}
+.contact{
+	text-align: center;
+	margin:20px auto;
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+}
+.con-container{
+	width: 390px;
+	margin: 25px auto;
+}
+.con-container p{
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+.con-container .footer_comma{
+	margin-right: 5px;
+	margin-left: 40px;
+}
+.con1{
+	width: 50px;
+	margin-right:20px;
+	letter-spacing: 2px;
+}
+.con-container p:nth-child(1) .con1, .con-container p:nth-child(2) .con1, .con-container p:nth-child(3) .con1{
+	margin-left: 10px;
+	margin-right: 38px;
+	letter-spacing: 3px;
+}
+.con2{
+	width: 120px;
+	margin-left: 20px;
+	letter-spacing: 2px;
+}
+.authority{
+	color: #ddd;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+@media screen and (max-width: 481px){
+	.con-container{
+		width: 100%;
+	}
+	.con-container p{
+		width: 300px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		overflow-x: hidden;
+		font-size: 10px;
+	}
+	.con-container .footer_comma{
+		margin-left: 0;
+	}
+	.con-container p:nth-child(1) .con1, .con-container p:nth-child(2) .con1, .con-container p:nth-child(3) .con1{
+		margin-right: 20px;
+	}
+	.con-container p:nth-child(4) .con2{
+		margin-left: 0;
+	}
+	.con-container p .footer_line{
+		display: none;
+	}
+}

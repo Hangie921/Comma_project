@@ -1,0 +1,95 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+ol, ul {
+    list-style: none;
+}
+
+/*header*/
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 65px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background:rgba(0,0,0,0.8);
+	z-index: 15;
+}
+.menu-container, .login{
+	display: none;
+}
+.logo{
+	width: 70px;
+	/*border:1px solid #fff;*/
+	left: 10px;
+	top: 5px;
+}
+.logo img{
+	width: 70px;
+	height: 60px;
+}
+.burger-cover{
+	position: absolute;
+	right: 10px;
+}
+.bur{
+	width: 50px;
+	height: 7px;
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.menu-container, .login{
+	display: none;
+}
+.burger-cover.on .bur.middle{
+	background: transparent;
+}
+.burger-cover.on .bur.top{
+	transform:rotate(45deg) translate(15px, 15px);
+}
+.burger-cover.on .bur.bottom{
+	transform: rotate(-45deg) translate(8px, -9px);
+}
+/*.burger-cover.on + .phone-content{
+	display: block;
+}*/
+/*phone-content*/
+.phone-content{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 75px;
+	background-color: #fff;
+}
+.box{
+	position: relative;
+	width: 90%;
+	margin: 15px auto;
+	height: 50px;
+	line-height: 50px;
+	background: #000;
+	color:#fff;
+	text-align: center;
+	font-size: 18px;
+}
+.phone-content #mobilelogout{
+	/*display: none;*/
+}
+.box a{
+	color: #fff;
+}
+

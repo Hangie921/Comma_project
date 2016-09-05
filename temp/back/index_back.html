@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index_back.css">
+	<title>comma後台管理</title>
+	<style>
+	button{
+		cursor: pointer;
+	}
+	body{
+		background: url("img/2.jpg") no-repeat center center fixed;
+		background-size:cover;
+	}
+	</style>
+</head>
+<body>
+<div class="signback">
+	<div class="all">
+	<h1>COMMA後台管理系統</h1>
+		<ul>
+			<li><span>帳號 / </span>
+			<input type="text" id="accountback"></li>
+			<li><span>密碼 / </span>
+			<input type="password" id="passwordback"></li>
+			<li>
+				<button id="cancel01" onclick="reset()">重新輸入</button>
+				<button id="registered" onclick="checkId()">登入</button>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+		function reset(){
+			document.getElementById('accountback').value="";
+			document.getElementById('passwordback').value="";
+		}
+		function checkId(){
+			xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = stateChanged; // call the stateChanged() when status changed
+
+			var url = 'login.php?account='+document.getElementById('accountback').value+'&password='+document.getElementById('passwordback').value;
+			xhr.open('Get',url,true);//start the connecttion
+			xhr.send(null);//send the request
+		}
+		function stateChanged(){
+			if(xhr.readyState == 4){
+				if(xhr.status == 200){
+					if(xhr.responseText == "success"){
+						location.href='AdManager_back.php'
+					}else{
+						alert(xhr.responseText);
+					}//end of the responseText
+				}else {
+					alert(xhr.status);
+				}//end of the status if
+
+			}//end of readyState if 
+		}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/memberArea.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/bPopup.js"></script>
+
+	
+
+	
+	<title>會員專區</title>
+</head>
+
+
+<body>
+	
+	<div class="header">
+		<div class="logo">
+			<a href="#"><img src="img/LOGO-white.png" width="90" height="70"></a>
+		</div>
+		<div class="menu-container">
+			<div class="menu">
+				<span class="m" id="exhibition"><a href="#">展覽資訊</a></span>
+			</div>
+			<div class="menu">
+				<span class="m" id="place"><a href="#">場地種類</a></span>
+			</div>
+			<div class="menu">
+				<span class="m" id="orderplace"><a href="#" id="ordera">預約檔期</a></span>
+			</div>
+		</div>
+	 	<div class="login">
+	 		<img src="img/singup.jpg" height="50" width="50"><br/><span class="signup"><a href="#">登入 / 註冊</a></span>
+	 	</div>
+	</div><!-- .header -->
+
+	<div class="rightLine">
+		<ul>
+			<li id="circle1">會員資料修改</li>
+			<li id="circle2">展覽資訊上傳</li>
+			<li id="circle3">訂單查詢</li>
+			<li id="circle4">評價</li>
+		</ul>
+	</div>
+	
+
+<!-- memMod開始 -->
+
+<section id="memMod" data-section-name="memMod">
+	<div class="content memCon">
+		<div class="box memBox">
+			<span class="exbTitle">會員資料修改</span>
+
+			<div class="forms">
+				<form>					
+				<div><div class="exbText memText">連絡電話 /</div> <input type="text" name="" value="" placeholder="">
+				</div>
+				
+				<div><div class="exbText memText">電子信箱 /</div> 
+					<input type="email" name="" value="" placeholder="">
+				</div>
+				
+				<div><div class="exbText memText">原始密碼 /</div> <input type="password">
+				</div>
+								
+				<div><div class="exbText memText">修改新密碼 /</div> <input type="password">
+				</div>
+
+				<div><div class="exbText memText">再輸入新密碼 /</div> <input type="password">
+				</div>
+
+				<div><div class="exbText memText">上傳圖像 /</div> <input type="file">
+				</div>
+					
+				<div class="buttons">
+					<input type="reset" class="reset" id="reset1"name="reset" value="重新輸入">
+					<input type="submit" class="submit"id="submit1"name="submit"  value="送出">
+				</div>
+
+				</form>
+
+			</div><!-- #form -->
+		</div> <!-- .box -->
+	</div> <!-- .content -->		
+</section>
+
+<!-- result Lightbox -->
+	<div class="result r-success">
+		<div class="success">送出成功</div>
+	</div>
+
+
+<!-- extUpload開始 -->
+	<section id="extUpload" data-section-name="extUpload">
+		<div class="content">
+		<div class="box">
+			<span class="exbTitle">展覽資訊上傳</span>
+
+			<div class="forms">
+				<form>
+				<div><div class="exbText">訂單選擇 /</div> <select name="ordno">
+　						<option value="1">1</option>
+　						<option value="2">2</option>
+　						<option value="3">3</option>
+						</select>					
+				</div>
+				
+				<div><div class="exbText">展覽開始日期 /</div> <input type="date" name="" value="" placeholder="">
+				</div>
+				
+				<div><div class="exbText">展覽開始日期 /</div> 
+					<input type="date" name="" value="" placeholder="">
+				</div>
+				
+				<div><div class="exbText">上傳展覽圖片 /</div> <input type="file">
+				</div>
+				
+				<div class="picText">圖片尺寸500x700上限15MB</div>
+				
+				<div><div class="exbText">展覽名稱 /</div> <input type="text">
+				</div>
+
+				<div><div class="exbText">展覽說明 / </div></div>
+				
+				<div class="exbTextCon">
+					<textarea name="" id="" cols="32" rows="15"></textarea>
+				</div>
+				
+				<div class="buttons">
+					<input type="reset" id="reset2"name="reset" class="reset" value="重新輸入">
+					<input type="submit" id="submit2"name="submit" class="submit" value="瀏覽"><!-- 待改 -->
+				</div>
+
+				</form>
+
+			</div><!-- #form -->
+		</div> <!-- .box -->
+	</div> <!-- .content -->	
+
+	</section>
+	
+	<div id="lightboxExtUpload">
+		<div class="x"><img src="img/X.png" alt=""></div>
+		<div class="box boxLB">
+			<span class="exbTitle">展覽資訊上傳</span>
+
+
+				
+				<div class="exbConLB"><div class="exbTexta">展覽開始日期 /</div><div class="exbTextLB">2015-11-01</div> 
+				</div>
+				
+				<div class="exbConLB"><div class="exbTexta">展覽結束日期 /</div><div class="exbTextLB">2015-11-04</div>				
+				</div>
+
+				<div class="imgLB"><img src="img/exb-5.jpg" ></div>
+				
+				<div class="exbConLB"><div class="exbTexta">展覽名稱 /</div><div class="exbTextLB">日本人的襪子</div>
+				</div>
+								
+				
+				<div class="bb">
+					<div class="exbTexta">展覽說明 / </div>
+					<div class="exbTextLB aa">
+					日本人從早到晚一直都是忙碌的生活，騎腳踏車、吃早餐、在外遛躂、搭電車，然後去上班，對他們而言，這就是一天，雖然每天平凡無奇，但他們每天都過得十分充實
+					</div>
+				</div>
+				
+								
+				<div class="buttons cc">
+					<input type="reset" id="reset4"name="reset" class="reset" value="上一步">
+					<input type="submit" id="submit4"name="submit" class="submit" value="送出"><!-- 待改 -->
+				</div>
+
+
+		</div> <!-- .box -->
+	</div><!-- #lightboxExtUpload -->
+
+
+<!-- order開始 -->
+
+<section id="order" data-section-name="order">
+	<div class="content orCon">
+		<div class="box orBox">
+			<span class="exbTitle">訂單查詢</span>
+			
+			<div class="curOrd">
+				<div class="ordTitle">目前訂單</div>
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-26</td>
+						<td>ZD7026</td>
+						<td>影知森</td>
+						<td>
+							<div id="startDate">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDate">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>
+				<div class="cancel">取消訂單</div>
+			</div><!-- .curOrd -->	
+			
+			<div class="curOrd">
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-12</td>
+						<td>ZD7021</td>
+						<td>目黑場</td>
+						<td>
+							<div id="startDate">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDate">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>
+				<div class="cancel">取消訂單</div>
+			</div><!-- .curOrd -->	
+			<div id="ordCurButton">其他目前訂單</div>
+
+			<div class="curOrd hisOrd">
+				<div class="ordTitle">歷史訂單</div>
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-06-28</td>
+						<td>ZD6955</td>
+						<td>影知森</td>
+						<td>
+							<div id="hisStartDate">2015-07-19</div>
+							<div>|</div>
+							<div id="hisFinishDate">2015-07-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>
+			</div><!-- .curOrd -->			
+
+			<div id="ordHisButton">其他歷史訂單</div>
+
+		</div> <!-- .box -->
+	</div> <!-- .content -->		
+</section>
+<div id="lightCurOrder">
+	<div class="x"><img src="img/X.png" alt=""></div>
+	<div class="box orBox">
+			<span class="exbTitle">訂單查詢</span>
+			
+			<div class="curOrd">
+				<div class="ordTitle">目前訂單</div>
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-26</td>
+						<td>ZD7026</td>
+						<td>影知森</td>
+						<td>
+							<div id="startDateLB1">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDateLB1">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>
+				
+			</div><!-- .curOrd -->	
+			
+			<div class="curOrd">
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-12</td>
+						<td>ZD7021</td>
+						<td>目黑場</td>
+						<td>
+							<div id="startDateLB1">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDateLB1">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>				
+			</div><!-- .curOrd -->
+
+			<div id="closeCurButton">關閉目前訂單</div>	
+	</div>
+	
+</div><!-- #lightCurOrder -->
+
+
+<div id="lightboxHisOrder">
+	<div class="x"><img src="img/X.png" alt=""></div>
+	<div class="box orBox">
+			<span class="exbTitle">訂單查詢</span>
+			
+			<div class="curOrd">
+				<div class="ordTitle">歷史訂單</div>
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-26</td>
+						<td>ZD7026</td>
+						<td>影知森</td>
+						<td>
+							<div id="startDateLB">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDateLB">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>
+				
+			</div><!-- .curOrd -->	
+			
+			<div class="curOrd">
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-12</td>
+						<td>ZD7021</td>
+						<td>目黑場</td>
+						<td>
+							<div id="startDateLB">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDateLB">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>				
+			</div><!-- .curOrd -->
+
+			<div id="closeHisButton">關閉歷史訂單</div>	
+	</div>
+</div><!-- #lightboxHisOrder -->
+
+
+<div id="lightboxCancel">
+	<div class="x"><img src="img/X.png" alt=""></div>
+	<div class="box orBox">
+			<span class="exbTitle">訂單查詢</span>
+			
+			<div class="curOrd">
+				<div class="ordTitle">目前訂單</div>
+				<table>
+					<tr>
+						<td>日期</td>
+						<td>訂單編號</td>
+						<td>場地名稱</td>
+						<td>租借日期</td>
+						<td>單價</td>
+						<td>折扣</td>
+						<td>總價</td>
+					</tr>
+					<tr>
+						<td>2015-10-26</td>
+						<td>ZD7026</td>
+						<td>影知森</td>
+						<td>
+							<div id="startDateLB1">2015-11-15</div>
+							<div>|</div>
+							<div id="finishDateLB1">2015-11-20</div>							
+						</td>
+						<td>NT 3000</td>
+						<td>有</td>
+						<td>NT 2700</td>
+					</tr>
+				</table>				
+			</div><!-- .curOrd -->
+
+			<div><div class="exbText dd">取消原因 / </div></div>
+				
+				<div>
+					<textarea name="" id="#cancelText" cols="80" rows="8"></textarea>
+				</div>
+
+			<div><div class="exbText dd">同意書 / </div></div>
+				
+				<div class="exbText ee">
+					<!-- <textarea name="" id="#cancelAgg" cols="80" rows="8"></textarea> -->
+					申請單位以任何其他理由取消合約或要求另議檔期，需於「租用首日之二天前」以書面告知場地方辦理退租。若未在規定期限之內通知，預約訂金恕無法退還亦不受理改期。如遇訂金退款情況時，匯款轉帳手續費需由申請方自行吸收，本單位將於退回款項中直接扣除手續費用。
+				</div>
+
+			<div class="agg"><input type="radio" name="agg" value="agg">我同意</div>
+			
+			<div class="canButtons">
+				<div id="closeCancelButton">不取消訂單</div>
+				<div id="CancelButton">取消訂單送出</div>
+			</div>	
+	</div>
+	
+</div><!-- #lightboxCancel -->
+
+
+
+<!-- assess開始 -->
+	<section id="assess" data-section-name="assess">
+	<div class="content asCon">
+		<div class="box asBox">
+			<span class="exbTitle">填寫評價</span>
+
+		<div class="forms">
+				<form>
+
+			<div><div class="exbText asText">訂單選擇 /</div> <select name="ordno">
+　						<option value="1">1</option>
+　						<option value="2">2</option>
+　						<option value="3">3</option>
+						</select>					
+				</div>
+				
+				<div><div class="exbText asText">好感星星 / </div></div>
+				
+				<div class="stars">
+
+					<ul>
+						<li><img src="img/star-w.png" alt=""></li>
+						<li><img src="img/star-w.png" alt=""></li>
+						<li><img src="img/star-w.png" alt=""></li>
+						<li><img src="img/star-w.png" alt=""></li>
+						<li><img src="img/star-w.png" alt=""></li>
+					</ul>
+					
+				</div>
+
+				<div><div class="exbText asText">填寫評價 / </div></div>
+				
+				<div class="assessText">
+					<textarea name="" id="" cols="32" rows="15"></textarea>
+				</div>
+					
+				<div class="buttons">
+					<input type="reset" id="reset3"name="reset"  class="reset" value="重新輸入">
+					<input type="submit" id="submit3"name="submit" class="submit" value="送出">
+				</div>
+
+				</form>
+
+			</div><!-- #form -->
+		</div> <!-- .box -->
+	</div> <!-- .content -->		
+</section>
+
+<div id="lightboxAssess">
+	<div class="x"><img src="img/X.png" alt=""></div>
+	<div class="box asLiBox">
+			<span class="exbTitle">填寫評價</span>
+
+				<div>
+					<div class="AsLB">訂單選擇 /</div>
+					<div id="asOrdchoice">木心坊 2015-11-03~2015-11-11</div> 
+
+				</div>
+				
+				<div><div class="AsLB">好感星星 / </div></div>
+				
+				<div class="stars">
+
+					<ul>
+						<li><img src="img/star.png" alt=""></li>
+						<li><img src="img/star.png" alt=""></li>
+						<li><img src="img/star.png" alt=""></li>
+						<li><img src="img/star.png" alt=""></li>
+						<li><img src="img/star-w.png" alt=""></li>
+					</ul>
+					
+				</div>
+
+				<div>
+					<div class="AsLB">填寫評價 / </div>
+					
+					<div id="asOrdText">					
+					覺得非常非常棒,場地合宜,服務人員也很親切
+					</div>
+
+				</div>
+				
+	
+					
+				<div class="buttons">
+					<input type="reset" id="reset5"name="reset"  class="reset" value="取消">
+					<input type="submit" id="submit5"name="submit" class="submit" value="送出">
+				</div>
+
+		</div> <!-- .box -->
+
+</div><!-- #lightboxAssess -->
+
+
+<!-- section結束 -->
+	
+		<script>
+     	$(function() {
+
+    		$.scrollify({
+			section : "section",
+			sectionName : "section-name",
+			easing: "easeOutExpo",
+			scrollSpeed: 500,
+			offset : 0,
+			scrollbars: true,
+			before:function() {},
+			after:function() {},
+			afterResize:function() {}
+			});
+
+    		// $("#submit1").click(function(){
+    		// 	$("#lightboxMemMod").bPopup();
+    		// });//$("#submit1").click     		
+
+    		$("#submit2").click(function(){
+    			$("#lightboxExtUpload").bPopup();
+    		});//$("#submit2").click
+
+
+    		$("#ordCurButton").click(function(){
+    			$("#lightCurOrder").bPopup();
+    		});//$("#ordHisButton").click
+
+    		$("#ordHisButton").click(function(){
+    			$("#lightboxHisOrder").bPopup();
+    		});//$("#ordHisButton").click
+
+    		$(".cancel").click(function(){
+    		$("#lightboxCancel").bPopup();
+    		});//$(".cancel").click
+
+    		$("#submit3").click(function(){
+    			$("#lightboxAssess").bPopup();
+    		});//$("#submit3").click
+
+    		$("#submit1").click(function(){
+    			$(".r-success").bPopup();
+    		});//$("#submit1").click
+    		
+
+    		$(".x").click(function(){
+    			$("#lightboxExtUpload").bPopup().close();
+    		})
+
+    		$(".x").click(function(){
+    			$("#lightCurOrder").bPopup().close();
+    		})
+
+    		$(".x").click(function(){
+    			$("#lightboxHisOrder").bPopup().close();
+    		})
+
+    		$(".x").click(function(){
+    			$("#lightboxCancel").bPopup().close();
+    		})
+
+    		$(".x").click(function(){
+    			$("#lightboxAssess").bPopup().close();
+    		});
+
+    		$("#closeCurButton").click(function(){
+    			$("#lightCurOrder").bPopup().close();
+    		});
+
+    		$("#closeHisButton").click(function(){
+    			$("#lightboxHisOrder").bPopup().close();
+    		});
+
+    		$("#circle1").click(function(){
+    			$.scrollify.move("#memMod");
+    		});    			
+
+    		$("#circle2").click(function(){
+    			$.scrollify.move("#extUpload");
+    		});
+
+    		$("#circle3").click(function(){
+    			$.scrollify.move("#order");
+    		});
+
+    		$("#circle4").click(function(){
+    			$.scrollify.move("#assess");
+    		});
+
+
+
+        });//$(function()
+	</script>
+</body>
+</html>

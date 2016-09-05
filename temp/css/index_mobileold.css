@@ -1,0 +1,306 @@
+.sImg,#bg_animation,#show_menu_container,.site_week .svg_wrapper svg,#siteImg2 div,#ex_hr,#comma_text .border,#site_title #site_title_svg,.siteImgMask{
+	display: none;
+}
+.bg{
+	padding-bottom: 0;
+	height: 80%;
+}
+.bg_text_svg svg{
+	height: 360px;
+	animation:none;
+	stroke-dasharray:0;
+	fill:#fff;
+}
+#show{
+	height: 300px;
+	box-sizing: border-box;
+}
+#header_nav{
+	top: 0;
+	padding-bottom: 0px;
+}
+.bg_text {
+	display: none;
+}
+.header_container{
+	animation: none;
+	width: 100%;
+	height: 300px;
+	/*background-color: #f00;*/
+	margin-bottom: 30px;
+}
+.sImg:nth-child(3){
+	display: block;
+	float: none;
+	width: 100%;
+	height: 300px;
+}
+.sImg:nth-child(3) img{
+	margin-top: -287px;
+	height: 100%;
+	width: 100%; 
+}
+.site_box{
+	height: 500px;
+}
+#site_container{
+	width: 100%;
+}
+#site_title{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 200px;
+	left: 0;
+}
+#site_title h2{
+	top: 40%;
+	left: 40%;
+	font-size: 36px;
+}
+#site_title p{
+	width: 290px;
+	font-size: 30px;
+	left: 40%;
+	top: 68%;
+}
+#site_title .svg_wrapper{
+	width: 35%;
+	height: 200px;
+}
+#site_title .svg_wrapper.svgAni{
+	border:3px solid #333;
+}
+
+#site_week11{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	top: 50px;
+}
+#site_week11 .svg_wrapper svg{
+	display: none;
+}
+#site_week11 h2{
+	margin-top: -50px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+#site_week11 h3{
+	margin-top: 5px;
+	margin-left: 0px;
+}
+#site_week11 p{
+	margin-left: 0;
+}
+#siteImg1{	
+	top: 155px;
+	width: 80%;
+	height: 0;
+	padding-bottom: 53%;
+	left:11%;
+
+}
+#siteImg1 img{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	top: -244px;
+}
+#siteImg1 .svg_wrapper{
+	border:4px solid #FF9100;
+	box-sizing:border-box;
+	height: 248px;
+
+
+}
+#siteImg1 .svg_wrapper svg{
+	display: none;
+}
+
+#site_week11 .week_container{
+	width: 80%;
+	left: 26%;
+	top: 0px;
+}
+.site_week ul li ul .week{
+	width: 12%;
+}
+.site_week ul li ul .day{
+	width: 12%;
+	font-size: 36px;
+}
+#site_week11 .svg_wrapper{
+	width: 80%;
+	height: 90px;
+	border: 3px solid #1b1b1b;
+	margin-left: 23%;
+	margin-top: -102px;
+}
+#siteImg2{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	top: 120px;
+}
+#site_week12{
+	top: -500px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+}
+#site_week12 h2{
+	margin-left: 0px;
+	margin-top: -145px;
+	margin-bottom: 10px;
+}
+#site_week12 h3{
+	margin-left: 0px;
+}
+#site_week12 p{
+	margin-left: 0px;
+}
+#site_week12 .week_container{
+	left:26%;
+	border:3px solid #1b1b1b;
+	padding:15px 0;
+	width: 73%;
+	top: 0;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: -85px;
+	box-sizing: border-box;
+
+}
+#site_week12 .week_container ul li ul .week{
+	width: 13.19291%;
+}
+#site_week12 .week_container ul li ul .day{
+	width: 13%;
+}
+#siteImg2 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+#siteImg2 img{
+	width: 98%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+
+#exhibition_container{
+	margin-top: -45px;
+}
+.border_wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	top: 0;
+	left: 5%;
+	height: 190px;
+	border:3px solid #FFC000;
+}
+.border_wrapper div{
+	display: none;
+}
+
+#ex_show{
+	width: 100%;
+	overflow: hidden;
+}
+.arrow{
+	z-index: 6;
+}
+#arrowR{
+	left: 90%;
+}
+#arrowL{
+	left: 0%;
+}
+#exhibition_container h2{
+	left: 22%;
+	font-size: 50px;
+}
+#exhibition_container p{
+	left: 50%;
+	font-size: 30px;
+	font-weight: 200;
+}
+#timeBar{
+	width: 515%;
+	left: 0;
+}
+#ex_box{
+	width: 515%;
+	left: 0;
+}
+.ex_single_box{
+	margin-left: 6.09%;
+}
+.date{
+	margin-left: 6.09%;
+}
+
+#comma_text{
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #fff;
+	width: 95%;
+	height: 450px;
+	margin-top: 139px;
+}
+
+#comma_container h2{
+	left: 0;
+}
+#comma_header{
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #fff;
+}
+#comma_header div{
+	display: none;
+}
+#comma_img{
+	width: 45%;
+	height: auto;
+	padding: 5px;
+
+	
+}
+#comma_img img{
+	width: 100%;
+	height: auto;
+	
+}
+#comma_small_title{
+	margin-left: 32%;
+}
+#comma_text p{
+	margin-left: 3%;
+	font-size: 24px;
+	width: 88%;
+	line-height: 45px;
+	margin-top: 0px;
+	transition: none;
+}
+#comma_text.borderAni p{
+	transition: none;
+}
+#bigC{
+	display: none;
+}
+#comma_container #comma_small_title{
+	margin-left: 300px;
+}

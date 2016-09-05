@@ -1,0 +1,33 @@
+.top{
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.top th{
+	font-size: 16px;
+}
+.tableContainer{
+	text-align: center;
+}
+.tableContainer h2{
+	display: inline-block;
+	width: 30%;
+	height: 30px;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;	
+	font-size: 20px;
+	margin-top: 30px;
+	font-weight: bold;
+}
+ul.menuText li:nth-child(4) a{
+	text-decoration : none;
+	color:#848484;
+	width: 100%;
+	height: 20px;
+	display: block;
+	background:url("../img/tr.png") no-repeat; 
+}
+.submit{
+	width: 100px;
+}

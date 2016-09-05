@@ -1,0 +1,47 @@
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	clear:both;
+	background: rgba(0, 0, 0, 1);
+	color:#fff;
+	padding-bottom: 15px;
+}
+
+.contact{
+	text-align: center;
+	margin:20px auto;
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+}
+.con-container{
+	width: 338px;
+	margin: 25px auto;
+}
+.con-container p{
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+.con-container .footer_comma{
+	margin-right: 5px;
+}
+.con1{
+	width: 50px;
+	margin-right:20px;
+}
+.con-container p:nth-child(1) .con1, .con-container p:nth-child(2) .con1, .con-container p:nth-child(3) .con1{
+	margin-left: 10px;
+	margin-right: 34px;
+}
+.con2{
+	width: 120px;
+	margin-left: 20px;
+	letter-spacing: 3px;
+}
+.authority{
+	text-align: center;
+	font-size: 10px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}

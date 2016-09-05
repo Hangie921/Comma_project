@@ -1,0 +1,349 @@
+body{
+
+	background-color:#fff;
+	background-image: url(../img/bng.png);
+	background-size: cover;
+	overflow: hidden;
+	}
+section{
+	box-sizing: border-box;
+}
+
+
+#memMod,#extUpload,#order,#assess{
+	width: 100%;
+	padding-top:2%;
+	/*margin-top: 3%;*/
+}
+
+.onepage-wrapper{
+	
+}
+
+/*----以下是rightLine,不可動--------*/
+#rightL2{
+	display: none;
+}
+
+.rightLine{
+	position: relative;
+	height: 50px;
+	margin-top:-10px;
+	padding-top:40px;
+
+	/*outline: 1px solid #f00;*/
+	color: #626262;
+	z-index: 4;
+}
+.rightLine ul a{
+	color: #626262;
+}
+body .rightLine{
+	text-align: center;
+	/*outline: 1px solid #f00;*/
+}
+
+
+.rightLine ul li{
+	width: 150px;
+	cursor: pointer;	
+	position: relative;
+	/*outline: 1px solid #ff0;*/
+	margin-right:2%;
+/*	margin-left: 3%;*/
+	letter-spacing: 2px;
+	border: 1px solid #626262;
+	padding:10px 0px;
+	background-color: #fff;
+	display: inline-block;
+
+}
+
+
+/*.rightLine ul li:hover{
+	color: #ffc600;
+}
+*/
+/*.rightLine li:nth-child(4){
+	padding-bottom: 15px;
+}*/
+
+/*.rightLine li::before{
+	position: absolute;
+	width: 10px;
+	height:10px;
+	content: "";
+	transform: rotate(45deg);
+	background-color:#626262;
+	margin-left:-15px;
+	margin-top: 4px;
+}*/
+/*.rightLine .circle{
+	background-color:#ffc600;
+}*/
+
+.cir{
+	width: 10px;
+	height:10px;
+	content: "";
+	transform: rotate(45deg);
+	background-color:#626262;
+	margin-right: 5px;
+	display: inline-block;
+}
+/*.rightLine li:nth-child(3)::after{
+	margin-left:38px;
+}
+
+.rightLine li:nth-child(4)::after{
+	margin-left:70px;
+}
+*/
+/*.Line:hover{
+	background-color:#ffc600;
+}*/
+
+/*----以上是rightLine,不可動--------*/
+
+
+.content{
+	width: 670px;
+	/*width: 65%;*/
+	height: 595px;
+	color: #ddd;
+	font-family: 'Times New Roman';
+	background-color: #606060;
+	margin: 0 auto;
+	/*margin-top:35px; */
+	padding-top: 10px;
+}
+
+.content.memCon{
+	height: 415px;
+}
+
+.content.asCon{
+	height: 550px;
+}
+
+.content.orCon{
+	height: 600px;
+}
+
+.mbox{
+	width: 640px;
+	/*width: 95%;*/
+	height: 550px;
+	border: 2px solid #fff;
+	margin: 0 auto;
+	padding-top: 30px;
+	
+	/*outline: 1px solid #0f0;*/
+	text-align: center;
+	background-color: #606060;	
+}
+
+.exbTitle{
+	font-size: 26px;
+	color: #fff;
+	text-shadow:1px 1px 1px #aaa ; 
+}
+
+.mbox.memBox{
+	height: 370px;
+}
+
+.mbox.asBox{
+	height: 505px;	
+}
+
+.mbox.asLiBox{
+	height: auto;
+}
+
+.box.orBox{
+	height: 555px;
+}
+
+
+.forms{
+	margin:0 auto;
+	margin-left:140px ; 
+	text-align: left;
+	padding: 10px 0;
+	/*outline: 1px solid #f00;*/	
+}
+
+.exbText{
+	font-size: 16px;
+	margin:8px 0;
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right:5px ;
+	color: #ddd; 
+	/*outline: 1px solid #fcc;*/
+}
+
+.exbText.memText{
+	margin:15px 0;
+}
+
+input,select{
+	width: 150px;
+	margin:5px 0;
+}
+
+.picText{
+	margin-left: 45px;
+	color: #ffc600;
+	font-size: 14px;
+}
+
+.exbTextCon,.assessText{
+	margin-left:75px;
+}
+
+#exhSiteName{
+	color: #ffc600;
+	font-size: 26px;
+	margin-top:10px;
+}
+
+
+/*共用*/
+/*.reset,*/.submit{
+	cursor: pointer;
+	margin: 15px 10px;
+	
+}
+
+/*.reset{
+	width: 125px;
+	height: 40px;
+	background-color: #fff;
+	color:#000;
+	border: 0px;
+	font-size: 16px;
+	margin-left: 60px;
+}*/
+
+.buttons{
+	position: relative;
+	margin:0 122px;
+}
+.submit{
+	/*position: absolute;*/
+	/*right:25%;*/
+	/*left:25%;*/
+	margin:25px auto 0px auto;
+	width: 125px;
+	height: 40px;
+	background-color: #ffa800;
+	color:#000;
+	border: 0px;
+	font-size: 16px;
+}
+.submit:hover{
+	color:#fff;
+}
+
+.stars{
+/*	outline: 1px solid #fcc;*/
+	margin-left:75px; 
+}
+
+.stars li{
+	display: inline-block;
+	margin-left: 12px;
+}
+
+.stars img{
+	width: 35px;
+	
+}
+
+.stars li:nth-child(1){
+	margin-left: 0px;
+}
+
+.starCh{
+	cursor: pointer;
+}
+
+.exbText.asText{
+	margin-bottom: 12px;
+
+}
+
+.curOrd{
+	/*outline: 1px solid #ff0;*/
+	margin: 10px auto 20px auto;
+	color: #ddd;
+
+}
+
+.curOrdMobile,.hisOrdMobile{
+	display: none;
+}
+
+.curOrd table{
+	/*outline: 1px solid #ff0;*/
+	margin: 0px auto;
+
+}
+
+.curOrd table tr td{
+	border: 1px solid #fff;
+	border-spacing: 0px;
+	padding: 10px 12px;
+	vertical-align: middle;
+}
+
+.ordTitle{
+	/*outline: 1px solid #f00;*/
+	text-align: left;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	color: #ffc600;
+	font-size: 17px;
+}
+
+.cancel1{
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 3px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#ordCurButton,#ordHisButton{
+	/*outline: 1px solid #00f;*/
+	width: 125px;
+	padding: 7px 0px;
+	background-color: #000;
+	color:#fff;
+	border: 0px;
+	font-size: 16px;
+	margin-left: 500px;
+	cursor: pointer;	
+}
+
+#ordCurButton{
+	margin-top: -20px;
+}
+
+#ordHisButton{
+	margin-top: 0px;
+}
+
+.curOrd.hisOrd{
+	margin-top: 40px;
+}
+.phone-content{
+	display: none;
+}
+
+#toUp{
+	display: none;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar</title>
+	<link rel="stylesheet" href="calendar-full.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>	
+	<script src="calendar-full.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="header">
+
+		<div calsss="parent">
+    		<div class="child">
+    			<div class="logo"></div>
+			</div>
+			<div class="child">
+				<div class="menu-container">
+					<div class="menu"><span class="m" id="exhibition"><a href="#">展覽資訊</a></span></div>
+					<div class="menu"><span class="m" id="place"><a href="#">場地種類</a></span></div>
+					<div class="menu"><span class="m" id="order"><a href="#" id="ordera">預約檔期</a></span></div>
+				</div>
+			</div>
+		    <div class="child">
+		    	<div class="login"></div>
+	    	</div>
+		</div>
+	</div>
+
+	<div calsss="parent">
+		<div class="child2">
+			<div class="leftnav">
+				<div class="block">
+					<div class="block1"></div>
+					<div class="block2"></div>
+				</div>
+				<div class="year">2015</div>
+				<div class="month" id="month">11</div>
+				<div class="before" id="cal-before"></div>
+				<div class="after" id="cal-after"></div>
+			</div>
+		</div>
+
+		<div class="child2">		
+			<div class="calendar">
+			<script>
+			var d = new Date();
+			var year = d.getFullYear();
+			var month = d.getMonth() + 1;
+			var date = d.getDate();//日
+			var day = d.getDay();//星期
+			var leapYear = 0;//平年
+			var days = 0;//天數
+
+			//判斷是否為閏年
+			if(year % 400 == 0 || year % 4 ==0){
+				leapYear = 1;//閏年
+			}else if(year % 4 == 0){
+				leapYear = 0;//平年
+			}
+
+			//判斷月份大小及天數
+			if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+				days = 31;
+			}else if(month == 4 || month == 6 || month == 9 || month == 11){
+				days = 30;
+			}else if(leapYear == 0){
+				days = 28;
+			}else{
+				days = 29;
+			} 
+
+			//將天數印進陣列
+			var ary = new Array();
+			for( i = 1; i <= days ; i++){
+				ary[i] = i;//array [1]是第一天
+				// document.write(ary[i]);
+			}
+
+			//開始印表格
+			document.write("<table><tr>");
+			var daycount = 0;
+			var weekcount = 0;
+			var a = 1;
+
+			d.setDate(1);//重新設定這個月份的日期起始為1
+			document.write("<td style='border:0'>Sun</td><td style='border:0'>Mon</td><td style='border:0'>Tue</td><td style='border:0'>Wed</td><td style='border:0'>Thu</td><td style='border:0'>Fri</td><td style='border:0'>Sat</td></tr><tr>");
+			while( daycount != d.getDay() ){//11月1日剛好是星期一
+				document.write("<td style='border:none'></td>");
+				daycount++;
+				weekcount ++;
+			}
+
+			while(a <= days){//現在11月有30天
+				//不用換行
+				if(weekcount != 6 && a != days){
+					document.write("<td>", ary[a], "</td>");
+					weekcount ++;
+				}
+				//要換行
+				else if(weekcount == 6 && a != days){
+					document.write("<td>", ary[a], "</td></tr><tr>");
+					weekcount = 0;
+				}
+				//剛好寫完但不用換行
+				else if(weekcount != 6 && a  == days){
+					document.write("<td>", ary[a], "</td>");
+				}
+				//寫完剛好最後一行
+				else if(weekcount == 6 && a == days){
+					document.write("<td>", ary[a], "</td></tr>");
+				}
+				a ++;
+			}
+				while(weekcount != 6){
+					// document.write("<td></td>");
+					weekcount ++;
+				}
+			document.write("</tr></table>");
+
+			</script>
+			</div>
+		</div>
+
+		<div class="child2">
+			<div class="empty-place">
+				<div class="date">1</div>
+				<div class="where">
+					<ul class="row1">
+						<li class="order-place redmon">紅樓磨坊</li>
+						<li class="order-place blackwd">目黑場</li>
+						<li class="order-place sahdowft">影之森</li>
+						<li class="order-place kingld">日光奇蹟</li>
+						<li class="order-place silentpc">謐境</li>
+					</ul>
+					<ul class="row2">
+						<li class="order-place redmon">紅樓磨坊</li>
+						<li class="order-place blackwd">目黑場</li>
+						<li class="order-place sahdowft">影之森</li>
+						<li class="order-place kingld">日光奇蹟</li>
+						<li class="order-place silentpc">謐境</li>
+					</ul>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<p class="contact">Contact Information</p>
+	<div class="con-container">
+		<p><span class="con1" id="tel">電話</span>─────────────<span class="con2" id="telnum">(03)3478-189</span></p>
+		<p><span class="con1" id="fax">傳真</span>─────────────<span class="con2" id="faxnum">(03)3478-189</span></p>
+		<p><span class="con1" id="mail">信箱</span>─────────────<span class="con2" id="emailnum">couldbedon@gmail.com</span></p>
+	</div>
+	<p class="authority">&copy;comma Popside.comma design.wendy Yang</p>
+</footer>
+<script src="jquery-1.11.3.min.js"></script>
+<!-- </div> -->
+</body>
+</html>
